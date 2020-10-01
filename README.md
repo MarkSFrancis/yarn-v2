@@ -23,5 +23,5 @@ Add support for various things that don't support pnp natively
 ```sh
 yarn add -D pnp-webpack-plugin # Not needed in webpack v5
 yarn add -D @yarnpkg/pnpify
-yarn add pnpify --sdk vscode
+yarn pnpify --sdk vscode
 ```
