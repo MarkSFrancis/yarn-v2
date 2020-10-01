@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const PnpWebpackPlugin = require(`pnp-webpack-plugin`);
 
 module.exports = (env) => {
   const isDevelopment = !env || env.NODE_ENV !== "production";
@@ -58,6 +59,10 @@ module.exports = (env) => {
     },
     resolve: {
       extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],
+      plugins: [PnpWebpackPlugin],
+    },
+    resolveLoader: {
+      plugins: [PnpWebpackPlugin],
     },
     module: {
       rules: [
