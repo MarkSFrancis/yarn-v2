@@ -1,23 +1,17 @@
-# Typescript Template for Node
+# Yarn v2
 
-Template project for a SPA React Typescript app
+[Yarn v2](http://yarnpkg.com/) is a major break away from [classic yarn](https://classic.yarnpkg.com/). Along with a number of other changes, it now relies entirely on PnP (plug and play) compatibility, which not all libraries or SDKs support.
 
-[![Actions Status](https://github.com/MarkSFrancis/ts-react-template/workflows/Build/badge.svg)](https://github.com/MarkSFrancis/ts-react-template/actions)
+This project attempts to demonstrate how someone would go about adding support for many of those packages, including support for webpack v4, Typescript, and VS Code.
 
-## Features
+## Steps to add support:
 
-1. Typescript
-1. Hot reload
-1. React JS (via webpack, not create-react-app)
-1. Public assets folder
-1. SCSS (global and module)
-1. CSS in JS
-1. Inline optimised SVG
-1. Linter + Formatter
-1. Testing (shallow DOM)
-1. Client side routing
-1. Client side title and metadata updating
-1. Auto-package install on pull
-1. Auto-lint on commit
-1. Auto-test on push
-1. Dependabot
+```sh
+yarn set version latest
+yarn
+yarn plugin import interactive-tools # Adds a plugin to the repository to allow interactive package updates
+yarn upgrade-interactive # Optional - updates all dependencies
+yarn add -D pnp-webpack-plugin # Adds support for webpack 4 (also needs to be added to webpack.config.js)
+yarn add -D @yarnpkg/pnpify # Adds support for packages that don't use require()
+yarn add pnpify --sdk vscode # Adds support for VSCode's various language servers to use pnp compatible variants
+```
