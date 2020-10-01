@@ -9,9 +9,19 @@ This project attempts to demonstrate how someone would go about adding support f
 ```sh
 yarn set version latest
 yarn
-yarn plugin import interactive-tools # Adds a plugin to the repository to allow interactive package updates
-yarn upgrade-interactive # Optional - updates all dependencies
-yarn add -D pnp-webpack-plugin # Adds support for webpack 4 (also needs to be added to webpack.config.js)
-yarn add -D @yarnpkg/pnpify # Adds support for packages that don't use require()
-yarn add pnpify --sdk vscode # Adds support for VSCode's various language servers to use pnp compatible variants
+```
+
+Optional - enables updating dependencies
+
+```sh
+yarn plugin import interactive-tools
+yarn upgrade-interactive
+```
+
+Add support for various things that don't support pnp natively
+
+```sh
+yarn add -D pnp-webpack-plugin # Not needed in webpack v5
+yarn add -D @yarnpkg/pnpify
+yarn add pnpify --sdk vscode
 ```
