@@ -1689,20 +1689,20 @@
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
 
-"@yarnpkg/core@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@yarnpkg/core/-/core-2.3.0.tgz#1ab6cf72f627592d84648795253b3bd54770e2e3"
+"@yarnpkg/core@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@yarnpkg/core/-/core-2.3.1.tgz#feded2154ffbdab23b9a34dac8260b70f7ddf82e"
   dependencies:
     "@arcanis/slice-ansi" "^1.0.2"
     "@types/semver" "^7.1.0"
     "@types/treeify" "^1.0.0"
-    "@yarnpkg/fslib" "^2.2.2"
+    "@yarnpkg/fslib" "^2.3.0"
     "@yarnpkg/json-proxy" "^2.1.0"
     "@yarnpkg/libzip" "^2.2.1"
-    "@yarnpkg/parsers" "^2.2.1"
-    "@yarnpkg/pnp" "^2.3.0"
-    "@yarnpkg/shell" "^2.3.0"
-    binjumper "^0.1.0"
+    "@yarnpkg/parsers" "^2.3.0"
+    "@yarnpkg/pnp" "^2.3.1"
+    "@yarnpkg/shell" "^2.4.0"
+    binjumper "^0.1.2"
     camelcase "^5.3.1"
     chalk "^3.0.0"
     ci-info "^2.0.0"
@@ -1726,9 +1726,9 @@
     tslib "^1.13.0"
     tunnel "^0.0.6"
 
-"@yarnpkg/fslib@^2.1.0", "@yarnpkg/fslib@^2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@yarnpkg/fslib/-/fslib-2.2.2.tgz#d5566521a9b612fc345d8491b61c39a802ed207f"
+"@yarnpkg/fslib@^2.1.0", "@yarnpkg/fslib@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@yarnpkg/fslib/-/fslib-2.3.0.tgz#448445d43d52252eba757b8e25a78f0333f806d8"
   dependencies:
     "@yarnpkg/libzip" "^2.2.1"
     tslib "^1.13.0"
@@ -1747,40 +1747,40 @@
     "@types/emscripten" "^1.38.0"
     tslib "^1.13.0"
 
-"@yarnpkg/parsers@^2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@yarnpkg/parsers/-/parsers-2.2.1.tgz#414ffb70571a17206c1efa1cff5fbd01e44c4f59"
+"@yarnpkg/parsers@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@yarnpkg/parsers/-/parsers-2.3.0.tgz#7b9564c6df02f4921d5cfe8287c4b648e93ea84b"
   dependencies:
     js-yaml "^3.10.0"
     tslib "^1.13.0"
 
-"@yarnpkg/pnp@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@yarnpkg/pnp/-/pnp-2.3.0.tgz#92a4925621ff8df8f7edbe6caac02ae3103b11b1"
+"@yarnpkg/pnp@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@yarnpkg/pnp/-/pnp-2.3.1.tgz#385dbc96ca31086e2620f5f4f8966293d730fa97"
   dependencies:
     "@types/node" "^13.7.0"
-    "@yarnpkg/fslib" "^2.2.2"
+    "@yarnpkg/fslib" "^2.3.0"
     tslib "^1.13.0"
 
-"@yarnpkg/pnpify@^2.3.1":
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/@yarnpkg/pnpify/-/pnpify-2.3.1.tgz#cdf137d47b156279678d9688c07e1ee650d10052"
+"@yarnpkg/pnpify@^2.3.2":
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/@yarnpkg/pnpify/-/pnpify-2.3.2.tgz#5bae763a9c6f25979adc888a0be2b09fce46d6fb"
   dependencies:
-    "@yarnpkg/core" "^2.3.0"
-    "@yarnpkg/fslib" "^2.2.2"
-    "@yarnpkg/parsers" "^2.2.1"
+    "@yarnpkg/core" "^2.3.1"
+    "@yarnpkg/fslib" "^2.3.0"
+    "@yarnpkg/parsers" "^2.3.0"
     chalk "^3.0.0"
     clipanion "^2.6.2"
     comment-json "^2.2.0"
     lodash "^4.17.15"
     tslib "^1.13.0"
 
-"@yarnpkg/shell@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@yarnpkg/shell/-/shell-2.3.0.tgz#ce128fb65516ffd64cc1217ba6176d8da5943997"
+"@yarnpkg/shell@^2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@yarnpkg/shell/-/shell-2.4.0.tgz#e325d7ecb413bd6932552932cb48e0ab2999eb63"
   dependencies:
-    "@yarnpkg/fslib" "^2.2.2"
-    "@yarnpkg/parsers" "^2.2.1"
+    "@yarnpkg/fslib" "^2.3.0"
+    "@yarnpkg/parsers" "^2.3.0"
     clipanion "^2.6.2"
     cross-spawn "7.0.3"
     fast-glob "^3.2.2"
@@ -2211,7 +2211,7 @@ bindings@^1.5.0:
   dependencies:
     file-uri-to-path "1.0.0"
 
-binjumper@^0.1.0:
+binjumper@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/binjumper/-/binjumper-0.1.2.tgz#a82beb255c51ee631330f69897bc191169905023"
 
